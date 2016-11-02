@@ -13,6 +13,7 @@
 		3E3144ED1DC7D49800A5CEB4 /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E3144EB1DC7D49800A5CEB4 /* DoIt.xcdatamodeld */; };
 		3E3144EF1DC7D49800A5CEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3144EE1DC7D49800A5CEB4 /* Assets.xcassets */; };
 		3E3144F21DC7D49800A5CEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3144F01DC7D49800A5CEB4 /* LaunchScreen.storyboard */; };
+		3E968E781DCA959300C7989F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E968E771DCA959300C7989F /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3E3144EE1DC7D49800A5CEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E3144F11DC7D49800A5CEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E3144F31DC7D49800A5CEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E968E771DCA959300C7989F /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3E3144E41DC7D49800A5CEB4 /* AppDelegate.swift */,
 				3E3144E61DC7D49800A5CEB4 /* ViewController.swift */,
+				3E968E771DCA959300C7989F /* Task.swift */,
 				3E3144E81DC7D49800A5CEB4 /* Main.storyboard */,
 				3E3144EE1DC7D49800A5CEB4 /* Assets.xcassets */,
 				3E3144F01DC7D49800A5CEB4 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E968E781DCA959300C7989F /* Task.swift in Sources */,
 				3E3144ED1DC7D49800A5CEB4 /* DoIt.xcdatamodeld in Sources */,
 				3E3144E71DC7D49800A5CEB4 /* ViewController.swift in Sources */,
 				3E3144E51DC7D49800A5CEB4 /* AppDelegate.swift in Sources */,
@@ -303,6 +307,7 @@
 				3E3144F81DC7D49800A5CEB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

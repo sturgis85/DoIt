@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="690"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Task View Controller-->
         <scene sceneID="jdH-5D-QeU">
             <objects>
-                <viewController id="nwl-w5-Nru" sceneMemberID="viewController">
+                <viewController id="nwl-w5-Nru" customClass="CreateTaskViewController" customModule="DoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eCe-Di-Y51"/>
                         <viewControllerLayoutGuide type="bottom" id="liR-Kx-TAF"/>
@@ -59,7 +59,42 @@
                     <view key="view" contentMode="scaleToFill" id="VXW-41-Tf9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xc-4b-IQG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIV-s2-jyN">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMb-tF-JuW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OSL-TC-Udx"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGI-d3-nzw">
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wIV-s2-jyN" firstAttribute="centerX" secondItem="VXW-41-Tf9" secondAttribute="centerX" id="1Rc-3q-hBr"/>
+                            <constraint firstItem="jGI-d3-nzw" firstAttribute="top" secondItem="OSL-TC-Udx" secondAttribute="bottom" constant="30" id="9sb-X2-Meg"/>
+                            <constraint firstItem="jGI-d3-nzw" firstAttribute="centerX" secondItem="VXW-41-Tf9" secondAttribute="centerX" id="J9R-ti-fMZ"/>
+                            <constraint firstItem="CMb-tF-JuW" firstAttribute="top" secondItem="wIV-s2-jyN" secondAttribute="bottom" constant="30" id="Jc4-St-XVc"/>
+                            <constraint firstItem="3Xc-4b-IQG" firstAttribute="centerX" secondItem="VXW-41-Tf9" secondAttribute="centerX" id="L6r-s0-7tF"/>
+                            <constraint firstItem="CMb-tF-JuW" firstAttribute="centerX" secondItem="VXW-41-Tf9" secondAttribute="centerX" id="MIQ-6S-L4L"/>
+                            <constraint firstItem="3Xc-4b-IQG" firstAttribute="top" secondItem="eCe-Di-Y51" secondAttribute="bottom" constant="15" id="NQu-OK-Xua"/>
+                            <constraint firstItem="wIV-s2-jyN" firstAttribute="leading" secondItem="VXW-41-Tf9" secondAttribute="leadingMargin" constant="40" id="NWg-cg-Ssb"/>
+                            <constraint firstItem="OSL-TC-Udx" firstAttribute="centerX" secondItem="VXW-41-Tf9" secondAttribute="centerX" id="g0f-gI-r8K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wIV-s2-jyN" secondAttribute="trailing" constant="40" id="lba-KO-hge"/>
+                            <constraint firstItem="OSL-TC-Udx" firstAttribute="top" secondItem="CMb-tF-JuW" secondAttribute="bottom" constant="10" id="yhY-us-put"/>
+                            <constraint firstItem="wIV-s2-jyN" firstAttribute="top" secondItem="3Xc-4b-IQG" secondAttribute="bottom" constant="10" id="zuq-wX-ycl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbk-l5-s9J" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -78,6 +78,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OSL-TC-Udx"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGI-d3-nzw">
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="nwl-w5-Nru" eventType="touchUpInside" id="IuG-1v-kaa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,6 +99,10 @@
                             <constraint firstItem="wIV-s2-jyN" firstAttribute="top" secondItem="3Xc-4b-IQG" secondAttribute="bottom" constant="10" id="zuq-wX-ycl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="importantSwitch" destination="OSL-TC-Udx" id="CK5-pl-6SU"/>
+                        <outlet property="taskNameTextField" destination="wIV-s2-jyN" id="y6h-ct-gQg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbk-l5-s9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +113,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HN6-h7-FJS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GJD-Km-IQ9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GJD-Km-IQ9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
